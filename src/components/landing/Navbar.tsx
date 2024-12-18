@@ -23,7 +23,7 @@ export function Navbar() {
         height: headerHeight,
         boxShadow: shadowIntensity,
       }}
-      className="fixed top-4 left-4 right-4 z-50 flex items-center justify-center rounded-[30px] backdrop-blur-xl bg-white/90 dark:bg-black/85 transition-all duration-500 border border-transparent hover:border-[hsl(var(--primary))]"
+      className="fixed top-4 left-4 right-4 z-50 flex items-center justify-center rounded-[30px] backdrop-blur-xl bg-white/90 dark:bg-black/85 transition-all duration-500 border-b-2 border-transparent hover:border-indigo-500"
     >
       <div className="container mx-auto flex items-center justify-between px-8">
         {/* Logo */}
@@ -78,7 +78,7 @@ export function Navbar() {
                       className="w-fit"
                       whileHover={{
                         scale: 0.95,
-                        transition: { type: "spring", stiffness: 200 },
+                        transition: { type: "spring", stiffness: 100 },
                       }}
                     >
                       {item}
@@ -86,7 +86,7 @@ export function Navbar() {
                   </span>
 
                   {/* Gradient Underline */}
-                  <span className="absolute bottom-0 left-0 w-0 h-[3px] bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--secondary))] group-hover:w-full transition-all duration-500"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-blue-600 to-indigo-900 group-hover:w-full transition-all duration-500"></span>
                 </Link>
               </motion.li>
             ))}

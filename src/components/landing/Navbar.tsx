@@ -68,11 +68,11 @@ export function Navbar() {
                     {/* Arrow transitions smoothly */}
                     <motion.div
                       initial={{ x: 0, opacity: 1 }}
-                      whileHover={{ x: -20, opacity: 0 }}
+                      whileHover={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.3 }}
                       className="flex-shrink-0"
                     >
-                      <MoveUpRight className="w-3 h-3 text-[hsl(var(--primary))]" />
+                      <MoveUpRight className="w-3 h-3 text-[hsl(var(--primary))] hover:text-indigo-500 hover:scale-80" />
                     </motion.div>
                     <motion.span
                       className="w-fit"

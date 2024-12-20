@@ -95,15 +95,15 @@ export function Navbar() {
 
         {/* Login Button */}
         <motion.div
-          whileHover={{ scale: 0.95 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          whileHover={{ scale: 0.99 }}
+          transition={{ duration: 0.3, ease: "circInOut" }}
         >
-          <Link href="/login">
+          <Link href="/sign-in">
             <Button
               variant="outline"
-              className="relative overflow-hidden text-sm font-medium px-6 py-2 rounded-full bg-[hsl(var(--secondary))] text-[hsl(var(--background))] shadow-lg hover:shadow-xl transition-all duration-500 group"
+              className="relative overflow-hidden text-sm font-medium px-6 py-2 rounded-full bg-indigo-300 dark:bg-indigo-800 text-black/95 dark:text-white transition-all duration-500 group"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--secondary))] translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+              <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-200 dark:from-indigo-500 dark:to-indigo-800 translate-x-full group-hover:translate-x-0 transition-transform duration-500 rounded-full"></span>
               <span className="relative z-10 flex items-center space-x-2">
                 <span>Login</span>
                 <ArrowRight className="w-4 h-4" />

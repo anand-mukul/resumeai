@@ -1,6 +1,6 @@
-import { DashboardNavbar } from "@/components/dashboard/DashboardNavbar";
 import React from "react";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+import { DashboardNavbar } from "@/components/dashboard/DashboardNavbar";
 
 type Props = {
   children: React.ReactNode;

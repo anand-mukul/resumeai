@@ -7,9 +7,10 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
+  const { slug } = params;
   return (
     <div className="flex flex-col min-h-[70vh] w-screen px-4 py-8">
-      Content for Dashboard/{params.slug}
+      Content for Dashboard/{slug}
     </div>
   );
 }

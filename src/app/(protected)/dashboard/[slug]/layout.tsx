@@ -2,20 +2,17 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  params: {
-    slug: string;
-  };
+  params: { slug: string };
 };
 
-export default function DashboardSlugLayout({ children, params }: Props) {
+export default async function DashboardSlugLayout({ children, params }: Props) {
+  const slug = params.slug;
   return (
-    <div className="flex flex-col min-h-[70vh] w-screen px-4 py-8">
-      <header className="flex justify-between items-center">
-        <h1>Dashboard: {params.slug}</h1>
+    <div className="dashboard-layout">
+      <header className="dashboard-header">
+        <h1>Dashboard: {slug}</h1>
       </header>
-      <main className="flex flex-col min-h-[70vh] w-screen px-4 py-8">
-        {children}
-      </main>
+      <main className="dashboard-main">{children}</main>
     </div>
   );
 }

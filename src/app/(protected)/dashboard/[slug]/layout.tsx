@@ -7,14 +7,10 @@ type Props = {
   };
 };
 
-const SlugLayout = ({ children, params }: Props) => {
-  // Query Client
+export default function DashboardLayout({ children, params }: Props) {
   return (
     <div>
-      <h1>{params.slug}</h1>
-      {children}
+      {children} {params.slug}
     </div>
   );
-};
-
-export default SlugLayout;
+}

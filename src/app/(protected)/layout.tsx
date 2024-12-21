@@ -8,10 +8,15 @@ type Props = {
 
 const DashboardLayout = ({ children }: Props) => {
   return (
-    <div className="h-screen">
-      <HeroHighlight dotColor="bg-dot-thick-pink-500 dark:bg-dot-thick-pink-500">
+    <div className="min-h-screen">
+      <HeroHighlight
+        className="h-screen"
+        dotColor="bg-dot-thick-pink-500 dark:bg-dot-thick-pink-500"
+      >
         <DashboardNavbar />
-        <div className="pt-[72px]">{children}</div>
+        <div className="h-full pt-[5rem] lg:pt-[4rem]">
+          <div>{children}</div>
+        </div>
       </HeroHighlight>
     </div>
   );
